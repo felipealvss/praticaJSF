@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+	<h:form>
+		<h:commandLink value="Página Inicial" action="index.xhtml"/>
+		
+		<h:dataTable value="#{foneDeOuvidoBean.listaFone}" var="tabelaFone" border="1">
+			<h:column>
+				<h:outputText value="#{tabelaFone.marca}"/>
+			</h:column>
+			<h:column>
+				<h:outputText value="#{tabelaFone.modelo}"/>
+			</h:column>
+		</h:dataTable>
+	</h:form>
+	
+</html>
